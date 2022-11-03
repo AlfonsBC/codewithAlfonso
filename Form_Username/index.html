@@ -3,16 +3,34 @@
     <script src="jquerymin.js"></script>
     <style>
       html, body {
-        height: 600px;
-        width: 400px;
+        height: 500px;
+        width: 300px;
+        background-color:hsla(222, 100%, 87%, 0.5);
       }
     </style>
+    <title>Alfonso's Website</title>
   </head>
   <body>
-    <h1>Alfonso's Website</h1>
-    <h2>Let's fill out forms!</h2>
-    <p>Name: <input id="apivalue" type="text" name="value"></p>
-    <button id='fillForm'>Fill form</button>
+    <h1 id="msg">Let's fill out forms!</h1>
+    <form>
+      <p>What is your First Name?</p>
+      <input type="text" name="name" placeholder='First Name'><br><br>
+      <p>What is your Last Name?</p>
+      <input type="text" name="lname" placeholder='Last Name'><br><br>
+      <p>Which University are you studying at?</p>
+      <input type="radio" id="neu" name="uni" value="neu" checked>
+      <label for="neu">Northeastern University</label><br>
+      <input type="radio" id="mit" name="uni" value="mit">
+      <label for="mit">Massachusets Institute of Technology</label><br>
+      <input type="radio" id="bu" name="uni" value="bu">
+      <label for="bu">Boston University</label>
+      <p>Please, add your email to keep you updated</p>
+      <input type="email" name="email" placeholder='Email'><br><br>
+      <p>Please, add your number to keep you updated</p>
+      <input type="tel" name="phone" placeholder='Phone'><br><br>
+      <input type="submit" id="sub">
+  </form>
     <script src='action.js'></script>
   </body>
 </html>
+

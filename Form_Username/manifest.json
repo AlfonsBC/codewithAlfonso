@@ -1,10 +1,10 @@
 {
     "manifest_version": 2,
-    "name": "Alfonso's Plug In",
-    "description": "Creating a Hello World plugin and connecting it to a database",
+    "name": "Test Form Filler",
+    "description": "Populate data form",
     "version": "1.0",
     "browser_action": {
-        "default_title": "Click here to load form data!",
+        "default_title": "Testing how to load form data!",
         "default_popup": "index.html"
     },
     "permissions": [
